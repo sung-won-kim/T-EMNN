@@ -22,9 +22,6 @@ You can download the datasets using the following link:
 
 After extracting `data.zip`, put the `data` folder in the same directory as the `main.py` file.
 
-_**This proprietary dataset is provided for review purposes only.   
-Unauthorized distribution, reproduction, or disclosure is strictly prohibited.**_
-
 ## How to run
 ```
 python main.py
