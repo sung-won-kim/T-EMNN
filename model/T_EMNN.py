@@ -198,7 +198,6 @@ class T_EMNN(pl.LightningModule):
             ],
         )
 
-        # 스케줄러를 따로 초기화
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             optimizer,
             mode='max',
