@@ -31,7 +31,7 @@ class T_EMNN(pl.LightningModule):
 
         input_dim_node = raw_sample_data.node_attr.shape[1]
         cond_dim = raw_sample_data.conds_feat.shape[1]
-        input_dim_edge = raw_sample_data.edge_attr.shape[1]
+        input_dim_edge = raw_sample_data.edge_attr[:,-1].unsqueeze(1).shape[1]
         output_dim = raw_sample_data.y.shape[1]
         coord_dim_node = raw_sample_data.x.shape[1]
 
@@ -107,7 +107,7 @@ class T_EMNN(pl.LightningModule):
     
     def forward(self, data):
         node_feat = data.node_attr
-        edge_feat = data.edge_attr
+        edge_feat = data.edge_attr[:,-1].unsqueeze(1)
         edge_index = data.edge_index
         inv_coord = data.inv_x
 
