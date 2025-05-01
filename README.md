@@ -16,13 +16,13 @@ In this work, we propose a novel framework, the Thickness-aware E(3)-Equivariant
 - torch-geometric=2.4.0
 - trimesh 3.23.5
 
-```
+
 ## Datasets
 You can download the datasets using the following link:  
 [Download datasets](https://drive.google.com/file/d/1f_3zYKPlfq1Umb8rZ3Jfd8LtCSCqN7Ym/view?usp=share_link)
 
 After extracting `data.zip`, put the `data` folder in the same directory as the `main.py` file.
-```
+
 
 ## How to run
 ```
